@@ -26,6 +26,9 @@ public class Produto01 {
 		this.price = price;
 	}
 	
+	public static void staticPriceUpdate(Produto01 p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
 	@Override
 	public String toString() {
 		return "Produto [Nome = " + nome + ", Price = " + String.format("%.2f", price) + "]";
