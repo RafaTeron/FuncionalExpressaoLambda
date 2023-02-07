@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import entities.Produto01;
+import util.PriceUpdate;
 
-public class Program00 {
+public class Program01 {
 
 	public static void main(String[] args) {
 		
@@ -16,10 +17,8 @@ public class Program00 {
 		list.add(new Produto01("Tablet", 350.50));
 		list.add(new Produto01("HD Case", 80.90));
 
-		list.removeIf(p -> p.getPrice() >= 100);
+		list.forEach(new PriceUpdate());
 
-		for (Produto01 p : list) {
-			System.out.println(p);
-		}
+		list.forEach(System.out::println);
 	}
 }
