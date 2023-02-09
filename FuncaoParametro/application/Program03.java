@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import entities.Produto03;
+import services.ProductService;
 
-public class Program01 {
+public class Program03 {
 
 	public static void main(String[] args) {
 		
@@ -16,10 +17,10 @@ public class Program01 {
 		list.add(new Produto03("Tablet", 350.50));
 		list.add(new Produto03("HD Case", 80.90));
 		
-		double factor = 1.1;
+        ProductService ps = new ProductService();
 		
-		list.forEach(p -> p.setPrice(p.getPrice() * factor));
-
-		list.forEach(System.out::println);
+		double sum = ps.filteredSum(list, p -> p.getNome().charAt(0) == 'T');
+ 
+		System.out.println("Sum = " + String.format("%.2f", sum));
 	}
 }

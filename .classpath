@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="Predicate"/>
 	<classpathentry kind="src" path="Consumer"/>
 	<classpathentry kind="src" path="Function"/>
+	<classpathentry kind="src" path="FuncaoParametro"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
