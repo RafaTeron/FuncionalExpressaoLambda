@@ -3,18 +3,18 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 
-import entities.Produto01;
+import entities.Produto02;
 
 public class Program01 {
 
 	public static void main(String[] args) {
 		
-		List<Produto01> list = new ArrayList<>();
+		List<Produto02> list = new ArrayList<>();
 
-		list.add(new Produto01("Tv", 900.00));
-		list.add(new Produto01("Mouse", 50.00));
-		list.add(new Produto01("Tablet", 350.50));
-		list.add(new Produto01("HD Case", 80.90));
+		list.add(new Produto02("Tv", 900.00));
+		list.add(new Produto02("Mouse", 50.00));
+		list.add(new Produto02("Tablet", 350.50));
+		list.add(new Produto02("HD Case", 80.90));
 		
 		double factor = 1.1;
 		

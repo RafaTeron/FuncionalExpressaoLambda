@@ -2,10 +2,12 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import entities.Produto02;
+import util.UpperCaseName;
 
-public class Program00 {
+public class Program02 {
 
 	public static void main(String[] args) {
 		
@@ -15,11 +17,9 @@ public class Program00 {
 		list.add(new Produto02("Mouse", 50.00));
 		list.add(new Produto02("Tablet", 350.50));
 		list.add(new Produto02("HD Case", 80.90));
-
-		list.removeIf(p -> p.getPrice() >= 100);
-
-		for (Produto02 p : list) {
-			System.out.println(p);
-		}
+		
+		List<String> nomes = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+		
+		nomes.forEach(System.out::println);
 	}
 }

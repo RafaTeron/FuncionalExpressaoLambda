@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="Comparator"/>
 	<classpathentry kind="src" path="Predicate"/>
 	<classpathentry kind="src" path="Consumer"/>
+	<classpathentry kind="src" path="Function"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
