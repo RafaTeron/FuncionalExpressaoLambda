@@ -17,7 +17,7 @@ public class Program02 {
 		list.add(new Produto02("Tablet", 350.50));
 		list.add(new Produto02("HD Case", 80.90));
 		
-		List<String> nomes = list.stream().map(Produto02::nonUpperCaseName).collect(Collectors.toList());
+		List<String> nomes = list.stream().map(p -> p.getNome().toUpperCase()).collect(Collectors.toList());
 		
 		nomes.forEach(System.out::println);
 	}
