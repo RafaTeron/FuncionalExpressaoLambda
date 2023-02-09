@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import entities.Produto02;
-import util.UpperCaseName;
 
 public class Program02 {
 
@@ -18,7 +17,7 @@ public class Program02 {
 		list.add(new Produto02("Tablet", 350.50));
 		list.add(new Produto02("HD Case", 80.90));
 		
-		List<String> nomes = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+		List<String> nomes = list.stream().map(Produto02::upperCaseName).collect(Collectors.toList());
 		
 		nomes.forEach(System.out::println);
 	}
