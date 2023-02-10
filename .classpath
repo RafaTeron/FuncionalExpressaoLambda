@@ -11,5 +11,6 @@
 	<classpathentry kind="src" path="Function"/>
 	<classpathentry kind="src" path="FuncaoParametro"/>
 	<classpathentry kind="src" path="Stream"/>
+	<classpathentry kind="src" path="Pipeline"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
