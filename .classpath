@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="Consumer"/>
 	<classpathentry kind="src" path="Function"/>
 	<classpathentry kind="src" path="FuncaoParametro"/>
+	<classpathentry kind="src" path="Stream"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
