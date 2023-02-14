@@ -17,9 +17,9 @@ public class Program03 {
 		list.add(new Produto03("Tablet", 350.50));
 		list.add(new Produto03("HD Case", 80.90));
 		
-        ProductService ps = new ProductService();
+		ProductService ps = new ProductService();
 		
-		double sum = ps.filteredSum(list, p -> p.getNome().charAt(0) == 'T');
+        double sum = ps.filteredSum(list, p -> p.getNome().charAt(0) == 'T');
  
 		System.out.println("Sum = " + String.format("%.2f", sum));
 	}

@@ -13,5 +13,6 @@
 	<classpathentry kind="src" path="Stream"/>
 	<classpathentry kind="src" path="Pipeline"/>
 	<classpathentry kind="src" path="Exercicio01"/>
+	<classpathentry kind="src" path="Exercicio02"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
