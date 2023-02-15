@@ -10,7 +10,14 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 import entities.Funcionario;
-import service.ServicoDeProduto;
+
+/*Fazer um programa para ler os dados (nome, email e salário)
+de funcionários a partir de um arquivo em formato .csv.
+Em seguida mostrar, em ordem alfabética, o email dos
+funcionários cujo salário seja superior a um dado valor
+fornecido pelo usuário.
+Mostrar também a soma dos salários dos funcionários cujo
+nome começa com a letra 'M'.*/
 
 public class Program07 {
 
@@ -46,9 +53,10 @@ public class Program07 {
 			
 			emails.forEach(System.out::println);
 			
-			ServicoDeProduto sp = new ServicoDeProduto();
-			
-			double soma = sp.filteredSoma(list, f -> f.getNome().charAt(0) == 'M');
+			double soma = list.stream()
+					.filter(x -> x.getNome().charAt(0) == 'M')
+					.map(x -> x.getSalario())
+					.reduce(0.0, (x, y) -> x + y);
 			
 			System.out.printf("Soma dos salários das pessoas cujo nome começa com 'M' : %.2f", soma);
 
